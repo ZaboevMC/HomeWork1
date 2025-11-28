@@ -1,76 +1,84 @@
 public class Main {
     public static void main(String[] args) {
-        // Задача 1
-        double dog = 8.0;
-        System.out.println("Собака - " + dog);
+        System.out.println("Task 1");
+        int age = 19;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " +
+                    age + ", то он совершеннолетний\n");
+        } else {
+            System.out.println("Если возраст человека равен " +
+                    age + ", то он не достиг совершеннолетия, нужно немного подождать");
+        }
 
-        double cat = 3.6;
-        System.out.println("Кот - " + cat);
+        System.out.println("Task 2");
+        int airTemperature = 6;
+        if (airTemperature < 5) {
+            System.out.println("На улице холодно, нужно надеть шапку");
+        } else {
+            System.out.println("Сегодня тепло, можно идти без шапки\n");
+        }
 
-        double papper = 763789;
-        System.out.println("Бумага - " + papper);
+        System.out.println("Task 3");
 
-        // Задача 2
-        var dogs = dog + 4;
-        System.out.println("Собаки - " + dogs);
+        int maxSpeed = 59;
+        if (maxSpeed > 60) {
+            System.out.println("Если скорость " + maxSpeed + ", то придется заплатить штраф");
+        } else {
+            System.out.println("Можно ездить спокойно\n");
+        }
 
-        var cats = cat + 4;
-        System.out.println("Коты - " + cats);
+        System.out.println("Task 4");
 
-        var pappers = papper + 4;
-        System.out.println("Бумага - " + pappers);
+        int humanAge = 25;
 
-        // Задача 3
-        double dog3 = dogs - 3.5;
-        System.out.println("Собаки - " + dog3);
+        if (humanAge >= 2 && humanAge <= 6)  {
+            System.out.println("Если человеку " + humanAge + " лет(года), то ему нужно ходить в детский сад\n");
+        } else if (humanAge >= 7 && humanAge <= 17) {
+            System.out.println("Если человеку " + humanAge + " лет, то ему нужно ходить в школу\n");
+        } else if (humanAge >= 18 && humanAge <= 24) {
+            System.out.println("Если человеку " + humanAge + " лет, то ему нужно ходить в университет\n");
+        } else {
+            System.out.println("Если человеку " + humanAge + " лет(года), то ему нужно ходить на работу\n");
+        }
 
-        double cat3 = cats - 1.6;
-        System.out.println("Коты - " + cat3);
+        System.out.println("Task 5");
 
-        double papper3 = papper + 4;
-        System.out.println("Бумага - " + papper3);
+        int childrenAge = 15;
 
-        // Задача 4
-        var friend = 19;
-        var allFriends = friend;
-        System.out.println("Всего друзуй сейчас - " + allFriends);
+        if (childrenAge < 5) {
+            System.out.println("Если ребенку " + childrenAge + " года, то он не может кататься на атракционе");
+        } else if (childrenAge > 5 && childrenAge <= 14) {
+            System.out.println("Если ребенку " + childrenAge + " лет, то он может кататься только в сопровождении " +
+                    " взрослого. Если взрослого нет, то кататься нельзя");
+        } else if (childrenAge > 14) {
+            System.out.println("Если ребенку " + childrenAge + " лет, то он модет кататься на атракционе" +
+                    " без сопровождения взрослого\n");
+        }
 
-        var friends = allFriends + 2;
-        System.out.println("Стало друзей - " + friends);
+        System.out.println("Task 6");
 
-        var afterAllFriends = friend / 7;
-        System.out.println("Осталось друзей - " + afterAllFriends);
+        int ticketsPurchased = 101;
 
-        // Задача 5
-        double frog = 3.5;
-        System.out.println("Было лягушек - " + frog);
+        if (ticketsPurchased >= 102) {
+            System.out.println("Вагон полностью забит, мест больше нет\n");
+        } else if (ticketsPurchased < 102 && ticketsPurchased > 60) {
+            System.out.println("Есть только стоячие места\n");
+        } else if (ticketsPurchased < 60) {
+            System.out.println("В вагоне есть стоячие и сидячие места\n");
+        }
 
-        double frogs = frog * 10 / 3.5;
-        System.out.println("Стало лягушек - " + frogs);
+        System.out.println("Task 7");
 
-        double allFrogs = frogs + 4;
-        System.out.println("Осталось лягушек - " + allFrogs);
+        int one = 1;
+        int two = 6;
+        int three = 3;
 
-        // Задача 6
-        var weightBoxer1 = 78.2;
-        var weightBoxer2 = 82.7;
-        var totalWeightBoxers = weightBoxer1 + weightBoxer2;
-        var differenceWeightBoxers = weightBoxer2 - weightBoxer1;
-
-        System.out.println("Общая масса боксеров - " + totalWeightBoxers);
-        System.out.println("Разница в весе между боксерами - " + differenceWeightBoxers);
-
-        // Задача 7
-        var remainderOfDivision = weightBoxer2 % weightBoxer1;
-        System.out.println("Остаток деления - " + remainderOfDivision);
-
-        // Задача 8
-        var allHours = 640;
-        var oneWorker = 8;
-        var allWorkers = allHours / oneWorker;
-        System.out.println("Всего работников в компании - " + allWorkers + " человек");
-        var plusWorkers = allWorkers + 94;
-        var allTimes = allHours / plusWorkers;
-        System.out.println("Если в компании работает " + plusWorkers + " человека, то всего по " + allTimes + " часа работы может быть поделено между сотрудниками");
+        if (one >= two && one >= three) {
+            System.out.println("Большее из трех чисел " + one + " \n");
+        } else if (two >= one && two >= three) {
+            System.out.println("Большее из трех чисел " + two + " \n");
+        } else {
+            System.out.println("Большее из трех чисел " + three + " \n");
+        }
     }
 }
