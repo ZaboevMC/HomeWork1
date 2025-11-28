@@ -29,15 +29,15 @@ public class Main {
 
         System.out.println("Task 4");
 
-        int humanAge = 3;
+        int humanAge = 25;
 
         if (humanAge >= 2 && humanAge <= 6)  {
             System.out.println("Если человеку " + humanAge + " лет(года), то ему нужно ходить в детский сад\n");
         } else if (humanAge >= 7 && humanAge <= 17) {
             System.out.println("Если человеку " + humanAge + " лет, то ему нужно ходить в школу\n");
-        } else if (humanAge >= 17 && humanAge <= 24) {
+        } else if (humanAge >= 18 && humanAge <= 24) {
             System.out.println("Если человеку " + humanAge + " лет, то ему нужно ходить в университет\n");
-        } else if (humanAge > 24) {
+        } else {
             System.out.println("Если человеку " + humanAge + " лет(года), то ему нужно ходить на работу\n");
         }
 
