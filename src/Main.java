@@ -40,13 +40,12 @@ public class Main {
         } else {
             System.out.println("Если человеку " + humanAge + " лет(года), то ему нужно ходить на работу\n");
         }
-
         System.out.println("Task 5");
 
-        int childrenAge = 15;
+        int childrenAge = 5;
 
-        if (childrenAge < 5) {
-            System.out.println("Если ребенку " + childrenAge + " года, то он не может кататься на атракционе");
+        if (childrenAge <= 5) {
+            System.out.println("Если ребенку " + childrenAge + " года(лет), то он не может кататься на атракционе");
         } else if (childrenAge > 5 && childrenAge <= 14) {
             System.out.println("Если ребенку " + childrenAge + " лет, то он может кататься только в сопровождении " +
                     " взрослого. Если взрослого нет, то кататься нельзя");
